@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow-x: hidden;
+}
 .stripes {
   font-size: 12vw;
   overflow: hidden;
@@ -10,12 +13,14 @@
   font-family: "Ultra", serif;
   font-weight: 400;
   margin-bottom: 8vw;
+  z-index: 0;
 }
 .runner1 {
   width: 60vw;
   height: auto;
   position: absolute;
   top: 10vw;
+  z-index: 1;
 }
 nav {
   height: 5vw;
@@ -24,6 +29,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 a {
   font-size: 2vw;
@@ -54,32 +60,46 @@ p {
 }
 .window2 {
   padding: 10vw 8vw;
+  padding-top: 30vw;
   background-color: #26355d;
   padding-bottom: 1000px;
+  position: sticky;
+  z-index: 2;
 }
-.band {
-  width: 100vw;
-  height: 10vw;
+.marquee {
+  width: 100%;
+  overflow: hidden;
   background-color: black;
-  z-index: 100000000000000000000;
+  color: white;
+  white-space: nowrap;
+  display: flex;
   position: relative;
+  height: 6vw;
+  align-items: center;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  z-index: 4;
 }
-.scrolling-text {
+
+.marquee-content {
   display: inline-block;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-continuous 10s linear infinite;
+  font-size: 5vw;
+  margin-right: 1vw;
+  overflow: hidden;
 }
-
-.scrolling-text span {
-  font-size: 24px; /* Adjust text size */
-  padding-left: 100%; /* Space between repetitions */
-}
-
-/* Keyframes for scrolling effect */
-@keyframes scroll-left {
+@keyframes scroll-continuous {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
+}
+.scroll {
+  padding: 3vw 0;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  overflow: hidden;
 }
