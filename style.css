@@ -62,7 +62,6 @@ p {
   padding: 10vw 8vw;
   padding-top: 30vw;
   background-color: #26355d;
-  padding-bottom: 1000px;
   position: sticky;
   z-index: 2;
 }
@@ -102,4 +101,54 @@ p {
   z-index: 3;
   position: absolute;
   overflow: hidden;
+}
+.p1 {
+  margin-bottom: 10vw;
+}
+.images {
+  background: rgb(0, 255, 113);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 255, 113, 1) 0%,
+    rgba(48, 181, 208, 1) 51%,
+    rgba(38, 53, 93, 1) 95%
+  );
+  position: sticky;
+  z-index: 2;
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+.images img {
+  height: 20vw;
+  width: 34vw;
+  object-fit: cover;
+}
+.space {
+  margin-bottom: 10vw;
+}
+.slash .scroll {
+  background-color: #00ff71;
+}
+.slash .marquee {
+  background-color: rgba(0, 0, 0, 0);
+  height: 20vw;
+}
+.slash .marquee-content {
+  font-family: "Ultra", serif;
+  font-size: 50vw;
+  animation: scroll-continuous 100s linear infinite;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.9px);
+  -webkit-backdrop-filter: blur(14.9px);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  height: 50vw;
+  width: 50vw;
+  position: absolute;
+  z-index: 5;
+  top: 10vw;
 }
