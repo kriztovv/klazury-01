@@ -29,7 +29,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 a {
   font-size: 2vw;
@@ -146,9 +146,25 @@ p {
   backdrop-filter: blur(14.9px);
   -webkit-backdrop-filter: blur(14.9px);
   border: 1px solid rgba(255, 255, 255, 0.43);
-  height: 50vw;
-  width: 50vw;
-  position: absolute;
+  height: 30vw;
+  width: 35vw;
+  /* position: absolute; */
   z-index: 5;
-  top: 10vw;
+  margin-bottom: 5vw;
+  padding: 3vw;
+}
+.glasses {
+  /* z-index: 5;
+  position: absolute; */
+  width: 80vw;
+  /* left: 10vw; */
+  margin: 0 auto;
+  position: relative;
+  top: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.glass p {
+  font-size: 1vw;
 }
