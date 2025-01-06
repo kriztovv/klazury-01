@@ -22,13 +22,16 @@
   </head>
   <body class="body">
     <nav>
-      <img class="ikona" src="images/logo.png" />
+      <a href="#nav"><img class="ikona" src="images/logo.png" /></a>
+
       <div class="nava">
-        <a href="">information</a>
-        <a href="">gallery</a>
+        <a href="#window2">What is Marathon?</a>
+        <a href="#gallery">gallery</a>
+        <a href="#bungie">bungie</a>
+        <a href="#design">design</a>
       </div>
     </nav>
-    <img class="runner1" src="images/runner1.png" />
+    <img class="runner1" src="images/runner1.png" id="nav" />
     <div class="stripes">
       <h1>//////////////////////////</h1>
     </div>
@@ -50,7 +53,7 @@
     </div>
 
     <div class="window2">
-      <h2 class="bigHeader">What is Marathon?</h2>
+      <h2 class="bigHeader" id="window2">What is Marathon?</h2>
       <p class="p1">
         If you aren't familiar with the franchise, the Marathon trilogy is what
         Bungie earned its reputation on before it became synonymous with Halo
@@ -63,7 +66,7 @@
         players for riches, renown, and survival in an ever-evolving world.
       </p>
     </div>
-    <div class="images">
+    <div class="images" id="gallery">
       <img src="images/marathon1.jpg" />
       <img src="images/marathon2.jpg" />
       <img src="images/marathon3.jpg" />
@@ -128,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div class="glasses">
+      <div class="glasses" id="bungie">
         <div class="glass">
           <h3>The Rebirth of a Classic</h3>
           <p>
@@ -218,7 +221,7 @@
         src="https://my.spline.design/glowingplanetparticles-e24d07fca2ff44981763fe60cb534c4b/"
         frameborder="0"
       ></iframe>
-      <div class="card1">
+      <div class="card1" id="design">
         <h2 class="bigHeader">A Bold Aesthetic</h2>
         <p class="p1">
           Marathon is set to captivate players with its vibrant and surreal
@@ -263,6 +266,7 @@
           gameplay. This commitment to audio excellence sets Marathon apart as a
           truly immersive experience.
         </p>
+      </div>
       <div style="margin-top: 10vw"></div>
       <div class="card4">
         <h2 class="bigHeader">Community Engagement</h2>
@@ -275,16 +279,75 @@
           share their feedback, ideas, and experiences, ensuring that the
           community remains an integral part of the Marathon experience. With
           full cross-play and cross-save support, players can connect with
-          friends and rivals across platforms, fostering a diverse and
-          inclusive player base. This focus on community engagement ensures that
-          Marathon is more than just a game – it's a shared experience.
+          friends and rivals across platforms, fostering a diverse and inclusive
+          player base. This focus on community engagement ensures that Marathon
+          is more than just a game – it's a shared experience.
+        </p>
+      </div>
+      <div style="margin-top: 60vw"></div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="t1">
+            <td>Developer</td>
+            <td>Bungie</td>
+          </tr>
+          <tr class="t2">
+            <td>Game Genre</td>
+            <td>PvP-focused extraction shooter</td>
+          </tr>
+          <tr class="t1">
+            <td>Setting</td>
+            <td>Tau Ceti IV, a mysterious alien planet</td>
+          </tr>
+          <tr class="t2">
+            <td>Playable Characters</td>
+            <td>Cybernetic mercenaries known as "Runners"</td>
+          </tr>
+          <tr class="t1">
+            <td>Platforms</td>
+            <td>PlayStation 5, Xbox Series X/S, PC</td>
+          </tr>
+          <tr class="t2">
+            <td>Cross-Play and Cross-Save</td>
+            <td>Fully supported</td>
+          </tr>
+          <tr class="t1">
+            <td>Release Timeline</td>
+            <td>Playtests expected in 2025, official release date TBA</td>
+          </tr>
+          <tr class="t2">
+            <td>Visual Style</td>
+            <td>
+              Neon-infused, sci-fi meets cyberpunk with vibrant colors and
+              intricate geometric designs
+            </td>
+          </tr>
+          <tr class="t1">
+            <td>Core Gameplay</td>
+            <td>Competitive PvP missions focusing on retrieval and survival</td>
+          </tr>
+          <tr class="t2">
+            <td>Connection to Original</td>
+            <td>
+              Shares the universe of the original Marathon trilogy, but is not a
+              direct sequel
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="script.js"></script>
 
     <script src="gsapcode.js"></script>

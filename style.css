@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20vw;
+}
 body {
   overflow-x: hidden;
 }
@@ -214,4 +218,26 @@ h3 {
   transform: translateX(-100%); /* Start off-screen to the left */
   position: relative;
   width: 50vw;
+}
+.table {
+  color: white;
+  font-size: 1vw;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+td {
+  padding: 0.5vw 0.5vw;
+}
+.t1 {
+  background-color: rgba(119, 32, 233, 0.397);
+}
+.t2 {
+  background-color: #262c5d00;
+}
+th {
+  background-color: rgba(119, 32, 233, 0.719);
+  color: white;
+}
+table {
 }
