@@ -5,6 +5,16 @@
 body {
   overflow-x: hidden;
 }
+.header {
+  font-size: 10vw;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  color: black;
+  position: absolute;
+  z-index: 10;
+  top: 15vw;
+  left: 50vw;
+}
 .stripes {
   font-size: 12vw;
   overflow: hidden;
@@ -152,6 +162,9 @@ p {
   z-index: 5;
   margin-bottom: 5vw;
   padding: 3vw;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 .glasses {
   /* z-index: 5;
@@ -166,5 +179,39 @@ p {
   flex-wrap: wrap;
 }
 .glass p {
+  font-size: 1.2vw;
+}
+h3 {
+  font-size: 2vw;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+}
+.iframe {
+  position: sticky;
+  z-index: 0;
+  top: 10vw;
+  width: 100vw;
+  height: 100vh;
+}
+.window4 {
+  background-color: black;
+}
+.window4 h2,
+.window4 p {
+  color: white;
+  position: sticky;
+  z-index: 2;
+}
+.window4 p {
   font-size: 1vw;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  padding: 0 5vw;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  position: relative;
+  width: 50vw;
 }

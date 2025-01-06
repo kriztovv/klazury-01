@@ -41,6 +41,129 @@ gsap.from(".p1", {
   },
 });
 
+// Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".card1", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".card1", // The element that triggers the animation
+    start: "center center", // Start when the top of the div is 75% down the viewport
+    end: "bottom top", // End when the top of the div is 25% down the viewport
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+
+// Animate the div with the 'slide-in' class
+gsap.to(".card1", {
+  x: 0, // Slide it into view (initial transform was -100%)
+  scrollTrigger: {
+    trigger: ".card1", // The element that triggers the animation
+    start: "center center",
+    end: "bottom top",
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+gsap.to(".card1", {
+  scrollTrigger: {
+    trigger: ".card1",
+    start: "center center",
+    end: "+=1000vw",
+    scrub: true, // Smoothly syncs animation with the scroll
+
+    pin: true, // Pin the element in place when it reaches the end of the animation
+  },
+});
+gsap.from(".card2", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".card2", // The element that triggers the animation
+    start: "center center", // Start when the top of the div is 75% down the viewport
+    end: "bottom top", // End when the top of the div is 25% down the viewport
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+
+// Animate the div with the 'slide-in' class
+gsap.to(".card2", {
+  x: 0, // Slide it into view (initial transform was -100%)
+  scrollTrigger: {
+    trigger: ".card2", // The element that triggers the animation
+    start: "center center",
+    end: "bottom top",
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+gsap.to(".card2", {
+  scrollTrigger: {
+    trigger: ".card2",
+    start: "center center",
+    end: "+=1000vw",
+    scrub: true, // Smoothly syncs animation with the scroll
+
+    pin: true, // Pin the element in place when it reaches the end of the animation
+  },
+});
+gsap.from(".card3", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".card3", // The element that triggers the animation
+    start: "center center", // Start when the top of the div is 75% down the viewport
+    end: "bottom top", // End when the top of the div is 25% down the viewport
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+
+// Animate the div with the 'slide-in' class
+gsap.to(".card3", {
+  x: 0, // Slide it into view (initial transform was -100%)
+  scrollTrigger: {
+    trigger: ".card3", // The element that triggers the animation
+    start: "center center",
+    end: "bottom top",
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+gsap.to(".card3", {
+  scrollTrigger: {
+    trigger: ".card3",
+    start: "center center",
+    end: "+=1000vw",
+    scrub: true, // Smoothly syncs animation with the scroll
+
+    pin: true, // Pin the element in place when it reaches the end of the animation
+  },
+});
+gsap.from(".card4", {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: ".card4", // The element that triggers the animation
+    start: "center center", // Start when the top of the div is 75% down the viewport
+    end: "bottom top", // End when the top of the div is 25% down the viewport
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+
+// Animate the div with the 'slide-in' class
+gsap.to(".card4", {
+  x: 0, // Slide it into view (initial transform was -100%)
+  scrollTrigger: {
+    trigger: ".card4", // The element that triggers the animation
+    start: "center center",
+    end: "bottom top",
+    scrub: true, // Smoothly syncs animation with the scroll
+  },
+});
+gsap.to(".card4", {
+  scrollTrigger: {
+    trigger: ".card4",
+    start: "center center",
+    end: "+=1000vw",
+    scrub: true, // Smoothly syncs animation with the scroll
+
+    pin: true, // Pin the element in place when it reaches the end of the animation
+  },
+});
 //smooth
 const lenis = new Lenis();
 
