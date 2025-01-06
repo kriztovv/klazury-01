@@ -184,6 +184,25 @@ gsap.to(".table", {
     pin: true, // Pin the element in place when it reaches the end of the animation
   },
 });
+gsap.from(".conclusion", {
+  opacity: 0, // Start with full transparency
+  scrollTrigger: {
+    trigger: ".conclusion", // The element to trigger the animation
+    start: "top bottom", // Animation starts when the top of the div is at the bottom of the viewport
+    end: "top center", // Animation ends when the top of the div reaches the top of the viewport
+    scrub: true, // Smoothly animates on scroll
+  },
+});
+gsap.to(".conclusion", {
+  scrollTrigger: {
+    trigger: ".conclusion",
+    start: "center center",
+    end: "+=1000vw",
+    scrub: true, // Smoothly syncs animation with the scroll
+
+    pin: true, // Pin the element in place when it reaches the end of the animation
+  },
+});
 //smooth
 const lenis = new Lenis();
 

@@ -69,7 +69,7 @@ h2 {
   font-weight: 700;
 }
 p {
-  font-size: 40px;
+  font-size: 2vw;
   font-family: "Lexend", sans-serif;
 }
 .window2 {
@@ -239,5 +239,6 @@ th {
   background-color: rgba(119, 32, 233, 0.719);
   color: white;
 }
-table {
+.conclusion {
+  padding: 0 10vw;
 }
